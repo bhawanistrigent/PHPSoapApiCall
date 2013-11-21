@@ -8,6 +8,6 @@ $response =  $soap_obj->WebServiceMethodNameWillComeHere($params);
 if (is_soap_fault($response)) {
     return false;   
 }else{
-    print_r($response->WebServiceMethodNameWillComeHereReturn);
+    return $response->WebServiceMethodNameWillComeHereReturn;
 }
 ?>
